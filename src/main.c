@@ -1,43 +1,31 @@
 #include <Arduino.h>
-
 // put function declarations here:
-int myFunction(int, int);
-
+//#define v220_null_switch = PD5
+//#define v220_small_hot = PD3
+//#define v200_full_hot = PD4
+//#define ventilator_check_runned PD2
+//volatile uint8_t flag = 0;
+//void vent_one_int(void) {
+//  flag = 1;
+//}
 
 void setup() {
-  pinMode(PD5, OUTPUT);
-  pinMode(PD6, OUTPUT);
-  pinMode(PD3, OUTPUT);
-  pinMode(PD4, OUTPUT);
-  digitalWrite(PD5,0);
-  digitalWrite(PD6,0);
-  digitalWrite(PD3,0);
-  digitalWrite(PD4,0);
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
-
+  //pinMode(ventilator_check_runned, INPUT_PULLUP);
+  //pinMode(PD5, OUTPUT);
+  //pinMode(PD6, OUTPUT);
+  //pinMode(PD3, OUTPUT);
+  //pinMode(PD4, OUTPUT);
+  //digitalWrite(PD5,0);
+  //digitalWrite(PD6,0);
+  //digitalWrite(PD3,0);
+  //digitalWrite(PD4,0);
 }
-
 void loop() {
- // digitalWrite(PD5,0);
- // delay(1000);
- // digitalWrite(PD5,1);
- //  delay(1000);
- // digitalWrite(PD6,0);
- //  delay(1000);
- // digitalWrite(PD6,1);
- // delay(1000);
- // digitalWrite(PD3,0);
- // delay(1000);
- // digitalWrite(PD3,1);
- // delay(1000);
- // digitalWrite(PD4,0);
- // delay(1000);
- // digitalWrite(PD4,1);
- // delay(1000);
+ // if (flag) {
+  //  digitalWrite(LED_BUILTIN, 0);
+ //   delay(300);
+ //   digitalWrite(LED_BUILTIN, 1);
+ //   flag = 0;
+ // }
  }
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}
